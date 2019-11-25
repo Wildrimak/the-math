@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chess-board.png-2ba17206b044e6892c1ae1938e9c217a.stex"
+path="res://.import/tela_fundo.png-8898783d581c5565e4971cf5bb009dc0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/chess-board.png"
-dest_files=[ "res://.import/chess-board.png-2ba17206b044e6892c1ae1938e9c217a.stex" ]
+source_file="res://images/tela_fundo.png"
+dest_files=[ "res://.import/tela_fundo.png-8898783d581c5565e4971cf5bb009dc0.stex" ]
 
 [params]
 
