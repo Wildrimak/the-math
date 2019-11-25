@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://images/chess-board.png" type="Texture" id=1]
+[ext_resource path="res://images/dark-square.jpg" type="Texture" id=2]
+
+[node name="Node2D-Main" type="Node2D"]
+
+[node name="Sprite-ChessBoard" type="Sprite" parent="."]
+position = Vector2( 18.75, 210 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Sprite-DarkBoard" type="Sprite" parent="."]
+position = Vector2( 20.8396, 1297.42 )
+scale = Vector2( 1.68576, 1.5 )
+texture = ExtResource( 2 )
+centered = false
