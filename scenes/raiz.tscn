@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://images/tela_fundo.png" type="Texture" id=1]
 [ext_resource path="res://scenes/tela_fundo.gd" type="Script" id=2]
@@ -7,11 +7,16 @@
 [ext_resource path="res://scripts/quadro_escuro.gd" type="Script" id=5]
 [ext_resource path="res://icon.png" type="Texture" id=6]
 [ext_resource path="res://scripts/player.gd" type="Script" id=7]
-[ext_resource path="res://images/clock.png" type="Texture" id=8]
+[ext_resource path="res://scenes/clock.gd" type="Script" id=8]
+[ext_resource path="res://images/clock.png" type="Texture" id=9]
+[ext_resource path="res://images/pointer-hour.svg" type="Texture" id=10]
+[ext_resource path="res://images/pointer-min.svg" type="Texture" id=11]
+[ext_resource path="res://images/pointer-sec.svg" type="Texture" id=12]
 
 [node name="raiz" type="Node2D"]
 
 [node name="tela_fundo" type="Sprite" parent="."]
+position = Vector2( -0.368042, 0.368042 )
 texture = ExtResource( 1 )
 centered = false
 script = ExtResource( 2 )
@@ -31,9 +36,40 @@ texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="clock" type="Node2D" parent="."]
+position = Vector2( 392, 20 )
+script = ExtResource( 8 )
+pivot_hours_path = NodePath("pivot_hours")
+pivot_minutes_path = NodePath("pivot_minutes")
+pivot_seconds_path = NodePath("pivot_seconds")
 
 [node name="body" type="Sprite" parent="clock"]
-position = Vector2( 392, 20 )
 scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="pivot_hours" type="Position2D" parent="clock"]
+editor/display_folded = true
+position = Vector2( 150, 150 )
+
+[node name="arm_hours" type="Sprite" parent="clock/pivot_hours"]
+position = Vector2( -8, -39.85 )
+scale = Vector2( 1, 0.71145 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="pivot_minutes" type="Position2D" parent="clock"]
+editor/display_folded = true
+position = Vector2( 150, 150 )
+
+[node name="arm_minutes" type="Sprite" parent="clock/pivot_minutes"]
+position = Vector2( -8, -96 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="pivot_seconds" type="Position2D" parent="clock"]
+position = Vector2( 150, 150 )
+
+[node name="arm_seconds" type="Sprite" parent="clock/pivot_seconds"]
+position = Vector2( -1, -99 )
+texture = ExtResource( 12 )
 centered = false
