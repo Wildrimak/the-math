@@ -12,29 +12,28 @@
 [node name="raiz" type="Node2D"]
 
 [node name="tela_fundo" type="Sprite" parent="."]
-scale = Vector2( 1, 0.899337 )
 texture = ExtResource( 1 )
 centered = false
 script = ExtResource( 2 )
 
 [node name="tabuleiro" parent="." instance=ExtResource( 3 )]
-position = Vector2( -5.92122, 162.068 )
+position = Vector2( -5.92122, 262.545 )
 
 [node name="quadro_escuro" type="Sprite" parent="."]
-position = Vector2( 536.369, 1542.95 )
+position = Vector2( 532.853, 1622.06 )
 scale = Vector2( 1.45802, 1.32221 )
 texture = ExtResource( 4 )
 script = ExtResource( 5 )
 
 [node name="player" type="Sprite" parent="."]
-position = Vector2( 157.397, 954.641 )
+position = Vector2( 157.397, 725.902 )
 texture = ExtResource( 6 )
 script = ExtResource( 7 )
 
 [node name="clock" type="Node2D" parent="."]
 
 [node name="body" type="Sprite" parent="clock"]
-position = Vector2( 424, 30 )
-scale = Vector2( 0.190977, 0.156855 )
+position = Vector2( 392, 20 )
+scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 8 )
 centered = false
