@@ -4,6 +4,8 @@
 [ext_resource path="res://images/tabuleiro/casa/CasaNegra.svg" type="Texture" id=2]
 
 [node name="CasaBranca" type="TouchScreenButton"]
-position = Vector2( 128, 0 )
 normal = ExtResource( 1 )
 pressed = ExtResource( 2 )
+
+[node name="Centro" type="Position2D" parent="."]
+position = Vector2( 64, 64 )

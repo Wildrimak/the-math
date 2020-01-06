@@ -1,8 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://images/tabuleiro/casa/CasaNegra.svg" type="Texture" id=1]
 [ext_resource path="res://images/tabuleiro/casa/CasaBranca.svg" type="Texture" id=2]
+[ext_resource path="res://scripts/CasaNegra.gd" type="Script" id=3]
 
 [node name="CasaNegra" type="TouchScreenButton"]
 normal = ExtResource( 1 )
 pressed = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="Centro" type="Position2D" parent="."]
+position = Vector2( 64, 64 )
+[connection signal="released" from="." to="." method="_on_CasaNegra_released"]
