@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="TheMath"
-run/main_scene="res://scenes/raiz.tscn"
+run/main_scene="res://scenes/Principal.tscn"
 config/icon="res://icon.png"
 
 [debug]

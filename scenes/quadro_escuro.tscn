@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://images/dark-square.jpg" type="Texture" id=1]
+[ext_resource path="res://scripts/quadro_escuro.gd" type="Script" id=2]
+
+[node name="quadro_escuro" type="Sprite"]
+position = Vector2( 532.853, 1622.06 )
+scale = Vector2( 1.45802, 1.32221 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
