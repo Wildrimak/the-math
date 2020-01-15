@@ -8,29 +8,64 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Sprite",
+"class": "Casa",
+"language": "GDScript",
+"path": "res://scripts/Casa.gd"
+}, {
+"base": "Label",
+"class": "Equacao",
+"language": "GDScript",
+"path": "res://scripts/Equacoes.gd"
+}, {
+"base": "CanvasLayer",
+"class": "HUD",
+"language": "GDScript",
+"path": "res://scripts/HUD.gd"
+}, {
+"base": "Area2D",
+"class": "Jogador",
+"language": "GDScript",
+"path": "res://scripts/Jogador.gd"
+}, {
+"base": "Node2D",
+"class": "Main",
+"language": "GDScript",
+"path": "res://scripts/Main.gd"
+}, {
+"base": "Node2D",
+"class": "Tabuleiro",
+"language": "GDScript",
+"path": "res://scripts/Tabuleiro.gd"
+} ]
 _global_script_class_icons={
-
+"Casa": "",
+"Equacao": "",
+"HUD": "",
+"Jogador": "",
+"Main": "",
+"Tabuleiro": ""
 }
 
 [application]
 
 config/name="TheMath"
-run/main_scene="res://scenes/Principal.tscn"
-config/icon="res://images/icone/Icone.png"
-
-[debug]
-
-gdscript/completion/autocomplete_setters_and_getters=true
+run/main_scene="res://scenes/Main.tscn"
+config/icon="res://icon.png"
 
 [display]
 
 window/size/width=1080
 window/size/height=1920
-window/size/test_width=360
-window/size/test_height=640
+window/size/test_width=432
+window/size/test_height=768
 window/handheld/orientation="portrait"
 window/stretch/mode="2d"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
