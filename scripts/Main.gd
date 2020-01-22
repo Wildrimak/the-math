@@ -11,7 +11,7 @@ var global_score
 
 func _ready():
 	randomize()
-	self.tempo = 3
+	self.tempo = 30
 	self.start_position_tabuleiro = Vector2(28, 256)
 	self.tamanho_das_casas = 128
 	self.ordem = 8
