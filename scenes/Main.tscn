@@ -45,7 +45,7 @@ centered = false
 editor/display_folded = true
 
 [node name="AnimatedSprite" parent="Alvo" index="1"]
-frame = 6
+frame = 5
 
 [node name="Jogador" type="Area2D" parent="."]
 editor/display_folded = true
